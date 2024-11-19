@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+html{
+    line-height: 1
+}
+body{
+    font-family: メイリオ, Regular;
+    /* width: 960px; */
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.header{
+    max-width: 1280px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav ul{
+    display: flex;
+}
+.nav-list{
+    margin-right: 30px;
+    font-size: 14px;
+}
+.nav-list:nth-last-child(1){
+    margin-right: 0;
+}
+.fv-img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.about{
+    padding-top: 90px;
+    padding-bottom: 70px;
+    text-align: center; 
+}
+
+.section-title {
+    display: inline-block;
+    font-size: 32px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+.about-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-contents {
+    display: flex;
+    width: 533px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+}
+
+.about-text {
+    width: 410px;
+    text-align: left;
+}  
+.about-text h3{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}  
+.about-text p{
+    font-size: 14px;
+    line-height: 1.8;
+}  
+
+.bicycle{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.bicycle-contents{
+    padding: 0 32px;
+}
+.bicycle-contents ul{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.bicycle-text img{
+    width: 232px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.bicycle-text h3{
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.bicycle-text p{
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.footer{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .about-contents{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .about-img{
+        margin: 0 auto;
+    }
+
+    .about-text{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .bicycle-contents{
+        padding: 0 15px;
+    }
+
+    .bicycle-contents ul{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .bicycle-text img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .bicycle-text h3{
+        padding-top: 15px;
+    }
+     .bicycle-text p{
+        padding-top: 15px;
+     }
+}
